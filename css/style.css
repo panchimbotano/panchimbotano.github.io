@@ -93,13 +93,13 @@ main {
 
 #inicio {
     flex-direction: row;
-    justify-content: center;  /* Espacio alrededor de las imágenes */
+    justify-content: center;
 }
 
 #inicio img {
-    width: 15%;  /* Ajusta el ancho para que las imágenes estén más cerca */
-    object-fit: cover;  /* Asegura que las imágenes se ajusten sin distorsionarse */
-    margin: 0 5%;  /* Un pequeño margen entre las imágenes */
+    width: 15%;
+    object-fit: cover;
+    margin: 0 5%;
 }
 
 #nosotros-1 .content-section__image img {
@@ -121,7 +121,6 @@ main {
     margin: 10px 0;
 }
 
-
 .content-section__info {
     max-width: 800px;
     margin: 0 auto;
@@ -133,7 +132,7 @@ main {
     font-size: 28px;
     font-weight: 700;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .content-section__description {
@@ -239,6 +238,43 @@ main {
 
 .form-send__button:hover {
     background-color: #d45d1e;
+}
+
+/* Sección de testimonios */
+#testimonios {
+    background-color: #fdf2e9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonio {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio__texto {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.testimonio__texto strong {
+    color: #e67e22;
+}
+
+.testimonio__texto em {
+    font-style: italic;
 }
 
 /* Footer */
