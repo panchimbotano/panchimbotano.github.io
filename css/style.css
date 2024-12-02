@@ -106,26 +106,33 @@ main {
 
 #nosotros-1 .content-section__info,
 #nosotros-2 .content-section__info {
-    margin-bottom: 5px; /* Reduce espacio inferior del texto */
-    padding: 10px; /* Ajusta el espacio interno */
+    margin-bottom: 0px; /* Reduce espacio inferior del texto */
+    padding: 0px; /* Ajusta el espacio interno */
     text-align: left; /* Alineación opcional del texto */
 }
 
 #nosotros-1 .content-section__image,
 #nosotros-2 .content-section__image {
-    margin-top: 5px; /* Reduce el margen superior */
-    margin-bottom: 5px; /* Reduce el margen inferior */
+    margin-top: 0px; /* Reduce el margen superior */
+    margin-bottom: 0px; /* Reduce el margen inferior */
     display: flex; /* Asegura que las imágenes estén en línea */
     justify-content: center; /* Centra las imágenes */
     gap: 10px; /* Espacio entre imágenes */
 }
 
+#nosotros-1 {
+    flex-direction: row;
+}
+
+#nosotros-2 {
+    flex-direction: column;
+}
+
 #nosotros-1, 
 #nosotros-2 {
     display: flex; /* Muestra los contenidos en filas */
-    flex-direction: row; /* Imagen y texto en la misma línea */
     align-items: center; /* Alinea verticalmente */
-    justify-content: space-between; /* Espacia texto e imágenes */
+    justify-content: center; /* Espacia texto e imágenes */
     gap: 20px; /* Espacio entre imagen y texto */
     margin: 20px auto; /* Centra la sección */
 }
@@ -140,7 +147,7 @@ main {
 }
 
 .content-section {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,7 +160,7 @@ main {
 
 .content-section__info {
     max-width: 600px;
-    padding: 10px 20px; /* Espaciado interno */
+    padding: 0px 0px; /* Espaciado interno */
     text-align: center; /* Centra el texto */
 }
 
@@ -357,15 +364,48 @@ footer {
     color: #e67e22;
 }
 
+/* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
-    #nosotros-1, 
-    #nosotros-2 {
-        flex-direction: column; /* Los elementos se apilan verticalmente */
-        gap: 15px; /* Reduce el espaciado */
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    #inicio img {
+        width: 100%;
+        margin: 10px 0;
     }
 
     .content-section__image img {
-        width: 100px; /* Tamaño más pequeño para pantallas pequeñas */
+        width: 100px;
         height: 100px;
+    }
+
+    .product-view {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonios-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__extra {
+        flex-direction: column;
+        text-align: center;
     }
 }
