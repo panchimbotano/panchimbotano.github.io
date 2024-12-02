@@ -15,6 +15,8 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -102,11 +104,39 @@ main {
     margin: 0 5%;
 }
 
-#nosotros-1 .content-section__image img {
-    width: 200px;
-    height: 200px;
-    margin: 0 10px;
-    border-radius: 50%;
+#nosotros-1 .content-section__info,
+#nosotros-2 .content-section__info {
+    margin-bottom: 5px; /* Reduce espacio inferior del texto */
+    padding: 10px; /* Ajusta el espacio interno */
+    text-align: left; /* Alineación opcional del texto */
+}
+
+#nosotros-1 .content-section__image,
+#nosotros-2 .content-section__image {
+    margin-top: 5px; /* Reduce el margen superior */
+    margin-bottom: 5px; /* Reduce el margen inferior */
+    display: flex; /* Asegura que las imágenes estén en línea */
+    justify-content: center; /* Centra las imágenes */
+    gap: 10px; /* Espacio entre imágenes */
+}
+
+#nosotros-1, 
+#nosotros-2 {
+    display: flex; /* Muestra los contenidos en filas */
+    flex-direction: row; /* Imagen y texto en la misma línea */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Espacia texto e imágenes */
+    gap: 20px; /* Espacio entre imagen y texto */
+    margin: 20px auto; /* Centra la sección */
+}
+
+.content-section__image img {
+    width: 120px; /* Tamaño uniforme */
+    height: 120px;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+    border-radius: 50%; /* Mantiene las imágenes circulares */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+    margin: 10px;
 }
 
 .content-section {
@@ -122,17 +152,16 @@ main {
 }
 
 .content-section__info {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+    max-width: 600px;
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
 }
 
 .content-section__title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     color: #333;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .content-section__description {
@@ -140,6 +169,7 @@ main {
     color: #555;
     line-height: 1.6;
     text-align: justify;
+    margin: 10px 0;
 }
 
 .content-section__image {
@@ -149,8 +179,8 @@ main {
 }
 
 .content-section__image img {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     margin: 0 0px;
     border-radius: 50%;
 }
@@ -325,4 +355,17 @@ footer {
 
 .footer__extra i:hover {
     color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    #nosotros-1, 
+    #nosotros-2 {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        gap: 15px; /* Reduce el espaciado */
+    }
+
+    .content-section__image img {
+        width: 100px; /* Tamaño más pequeño para pantallas pequeñas */
+        height: 100px;
+    }
 }
