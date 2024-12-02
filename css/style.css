@@ -1,0 +1,207 @@
+/* Variables de color para fácil personalización */
+:root {
+    --primary-color: #FF7043;
+    --secondary-color: #FFD180;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --footer-bg-color: #222;
+    --footer-text-color: #ddd;
+}
+
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 0;
+}
+
+.header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 120px; /* Ajuste proporcional para el logo */
+}
+
+.navbar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-icono {
+    width: 30px;
+    cursor: pointer;
+}
+
+#menu:checked ~ .navbar {
+    display: flex;
+}
+
+/* Social Icons */
+.socials-1 a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Main Content */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+    background: var(--background-color);
+}
+
+.content-section__info {
+    flex: 1 1 300px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.content-section__title {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-section__description {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Quienes Somos */
+.content-section__image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Matriz 2x2 */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.content-section__image img {
+    width: 150px; /* Ajuste de tamaño uniforme */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Hace las imágenes circulares */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+.content-section__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-textarea {
+    resize: none;
+}
+
+.form-send__button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-send__button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+#footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__img {
+    width: 100px;
+}
+
+.footer__extra {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer__socialMessege {
+    font-size: 16px;
+}
+
+.footer__extra i {
+    color: var(--footer-text-color);
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer__extra i:hover {
+    color: var(--primary-color);
+}
