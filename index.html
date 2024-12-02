@@ -23,7 +23,7 @@
                     </li>
                     <li>
                         <i class="fi fi-rr-info"></i>
-                        <a href="#nosotros">Nosotros</a>
+                        <a href="#nosotros-1">Nosotros</a>
                     </li>
                     <li>
                         <i class="fi fi-rr-bread-loaf"></i>
@@ -36,9 +36,9 @@
                 </ul>
             </nav>
             <div class="socials-1">
-                <a href="#" aria-label="Facebook"><img src="images/r1.svg" alt="Facebook"></a>
-                <a href="#" aria-label="Instagram"><img src="images/r2.svg" alt="Instagram"></a>
-                <a href="#" aria-label="YouTube"><img src="images/r3.svg" alt="YouTube"></a>
+                <a href="https://www.instagram.com/panchimbotano" aria-label="Instagram"><img src="images/r1.svg" alt="Facebook"></a>
+                <a href="https://www.facebook.com/panchimbotano" aria-label="Facebook"><img src="images/r2.svg" alt="Instagram"></a>
+                <a href="https://wa.me/+51933321981?text=Hola" aria-label="WhatsApp"><img src="images/r3.svg" alt="YouTube"></a>
             </div>
         </div>
     </header>
@@ -48,8 +48,7 @@
             <img src="images/Section1One.png" alt="Pan Chimbotano 1">
             <img src="images/Section1Two.png" alt="Pan Chimbotano 2">
         </section>
-
-        <section id="nosotros" class="content-section">
+        <section id="nosotros-1" class="content-section">
             <div class="content-section__info">
                 <h3 class="content-section__title">¿Qué es PAN CHIMBOTANO?</h3>
                 <p class="content-section__description">
@@ -61,12 +60,11 @@
             </div>
         </section>
 
-        <section class="content-section">
+        <section id="nosotros-2" class="content-section">
             <div class="content-section__info"> 
                 <h3 class="content-section__title">¿Quiénes Somos?</h3>
                 <p class="content-section__description">
                     Integran el equipo: <br>Grados Cueva Claudia Gabriela (Ingeniería Agroindustrial), Cristin Emely Maza Alva (Ingeniería Agroindustrial), Almendra Celeste Alejo Ibañez (Comunicación Social) y Diego Ignacio Montes Chiguala (Ingeniería de Sistemas e Informática), todos estudiantes de la Universidad Nacional del Santa.
-                    <br>Mentor: <br>Dr. César Moreno Rojo, Especialista en Sistemas de Gestión de Seguridad y Salud en el Trabajo.
                 </p>
             </div>
             <div class="content-section__image">
@@ -80,14 +78,14 @@
         <section id="productos" class="content-section">
             <div class="product-view">
                 <div class="filing-product__picture">
-                    <img src="img/bottle_etiqueta0.png" alt="Pan Chimbotano Producto">
+                    <img src="images/Producto.png" alt="Pan Chimbotano Producto">
                 </div>
                 <div class="product-view__info">
-                    <div class="info-product__title">PAN DE MOLDE ENRIQUECIDO CON HARINA DE CÁSCARA DE MANGO Y CONCENTRADO PROTEICO. Pan Chimbotano - 650g</div>
+                    <div class="info-product__title">Pan de molde enriquecido con harina de cáscara de mango y concentrado proteico. Pan Chimbotano - 650 gr</div>
                     <div class="info-product__cost"><sup>S/ </sup>10.00</div>
                     <div class="info-product__description">
                         <div class="description-title">Descripción:</div>
-                        <div class="description-content">La bebida aporta al cuidado de su salud intestinal y aumenta sus defensas, incluso que es agradable pero libre de octógonos y químicos.</div>
+                        <div class="description-content">Pan Chimbotano aporta alto contenido en fibra dietética, omega 3, es muy rico en hierro y calcio.</div>
                     </div>
                 </div>
             </div>
@@ -96,30 +94,38 @@
         <section id="contactanos" class="content-section">
             <h1 class="content-section__title">Contáctanos</h1>
             <div class="content-section__description">Si tiene alguna pregunta o solicitud, no dude en contactarnos. Déjanos tus datos y te atenderemos en breve.</div>
-            <form action="" class="content-section__form">
-                <input class="form-input" type="text" placeholder="Nombre" required>
-                <input class="form-input" type="email" placeholder="Correo electrónico" required>
-                <input class="form-input" type="number" placeholder="Teléfono" required>
-                <textarea class="form-textarea" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <form action="https://formsubmit.co/panchimbotano@gmail.com" method="POST" class="content-section__form">
+                <input class="form-input" type="text" name="Nombre" placeholder="Nombre" required>
+                <input class="form-input" type="email" name="Email" placeholder="Correo electrónico" required>
+                <input class="form-input" type="number" name="Telefono" placeholder="Teléfono" required>
+                <textarea class="form-textarea" cols="30" name="Mensaje" rows="10" placeholder="Mensaje"></textarea>
                 <div class="form-send">
                     <button class="form-send__button">Enviar >></button> 
                 </div>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </section>
     </main>
    
     <footer id="footer">
         <div class="footer__info">
-            <img class="footer__img" src="" alt="Logo Footer">
+            <img class="footer__img" src="images/Logo.png" alt="Logo Footer">
             <span class="footer__copyright">Copyright © 2022-2024 Pan Chimbotano. Todos los derechos reservados.</span>
         </div>
-        <div class="footer__divline vertical-line"></div>
-        <div class="footer__extra">
-            <span class="footer__socialMessege">Síguenos en:</span>
-            <i class="fi fi-brands-facebook"></i>
-            <i class="fi fi-brands-instagram"></i>
-            <i class="fi fi-brands-youtube"></i>
-        </div>
+            <div class="footer__extra">
+                <span class="footer__socialMessege">Síguenos en:</span>
+                <a href="https://www.facebook.com/panchimbotano" target="_blank" aria-label="Facebook">
+                    <i class="fi fi-brands-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/panchimbotano" target="_blank" aria-label="Instagram">
+                    <i class="fi fi-brands-instagram"></i>
+                </a>
+                <a href="https://wa.me/+51933321981?text=Hola" target="_blank" aria-label="WhatsApp">
+                    <i class="fi fi-brands-whatsapp"></i>
+                </a>
+            </div>
     </footer>
 
 </body>
